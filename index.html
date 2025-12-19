@@ -2,41 +2,59 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Cartão Digital</title>
+  <title>Adicionar ao Apple Wallet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #f0f0f0, #dcdcdc);
       text-align: center;
-      background-color: #f9f9f9;
+      padding: 40px;
       margin: 0;
-      padding: 50px;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     img {
-      width: 200px;
+      width: 120px;
       margin-bottom: 20px;
     }
-    a {
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    a.button {
       display: inline-block;
-      padding: 15px 25px;
+      padding: 12px 24px;
       background-color: #000;
       color: #fff;
       text-decoration: none;
       border-radius: 8px;
-      font-size: 18px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
-    a:hover {
+    a.button:hover {
       background-color: #333;
     }
   </style>
 </head>
 <body>
-  <!-- Logo do Apple Wallet -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Apple_Wallet_logo.png" alt="Apple Wallet Logo">
-
-  <h1>Adicionar ao Wallet</h1>
-  <p>Clique abaixo para baixar seu cartão digital:</p>
-
-  <!-- Link para o arquivo .pkpass -->
-  <a href="card.pkpass">Baixar Cartão</a>
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Apple_Wallet_logo.png" alt="Apple Wallet Logo">
+    <h1>Adicionar ao Wallet</h1>
+    <p>Clique abaixo para baixar seu cartão digital:</p>
+    <a class="button" href="card.pkpass">Baixar Cartão</a>
+  </div>
 </body>
 </html>
